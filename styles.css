@@ -8,6 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 10px;
 }
 .grid-container {
     border: 3px solid black;
@@ -18,7 +20,6 @@ body {
     grid-template-columns: repeat(var(--grid-cols), 1fr);
 
 }
-
 .grid-fill {
     background-color: black;
 }
