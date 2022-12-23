@@ -1,0 +1,24 @@
+:root {
+    --grid-rows: 1;
+    --grid-cols: 1;
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    border: 3px solid black;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+
+}
+
+.grid-fill {
+    background-color: black;
+}
